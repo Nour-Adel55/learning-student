@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تغيير اللغة</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            margin-top: 50px;
+        }
+
+        .lang-button {
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .lang-button:hover {
+            background-color: #2980b9;
+        }
+
+        .content {
+            margin-top: 30px;
+            font-size: 20px;
+        }
+
+        .english-content,
+        .arabic-content {
+            display: none;
+        }
+
+        .show-english .english-content {
+            display: block;
+        }
+
+        .show-arabic .arabic-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <button class="lang-button" onclick="toggleLanguage()">تبديل اللغة</button>
+
+        <div class="content show-arabic">
+            <!-- Arabic Content -->
+            <p class="arabic-content">مرحبًا بك في موقعنا! هذا المحتوى باللغة العربية.</p>
+            <p class="arabic-content">استمتع بتصفح موقعنا واكتشف المزيد عن خدماتنا.</p>
+
+            <!-- English Content -->
+            <p class="english-content">Welcome to our website! This is content in English.</p>
+            <p class="english-content">Enjoy browsing our website and discover more about our services.</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            const content = document.querySelector('.content');
+            content.classList.toggle('show-english');
+            content.classList.toggle('show-arabic');
+        }
+    </script>
+
+</body>
+</html>

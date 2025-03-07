@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تعلم البرمجة</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+        }
+        .hero {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .card {
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1 class="text-4xl font-bold mb-2">مرحبًا بك في موقع تعلم البرمجة</h1>
+        <p class="text-lg">تعلم البرمجة بأسلوب ممتع وتفاعلي</p>
+    </section>
+    
+    <!-- Main Content -->
+    <div class="container mx-auto p-5">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-lg card">
+                <h2 class="text-xl font-bold mb-3">📚 الدورات التعليمية</h2>
+                <p>تعلم البرمجة من الصفر مع دروس تفصيلية لكل لغة برمجة.</p>
+                <a href="#courses" class="text-blue-500 hover:underline">اكتشف الدورات</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg card">
+                <h2 class="text-xl font-bold mb-3">📝 الاختبارات التفاعلية</h2>
+                <p>اختبر مهاراتك البرمجية من خلال أسئلة متنوعة.</p>
+                <a href="#quizzes" class="text-blue-500 hover:underline">ابدأ الاختبار</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg card">
+                <h2 class="text-xl font-bold mb-3">📖 المقالات والشروحات</h2>
+                <p>مقالات ودروس مكتوبة لتوضيح مفاهيم البرمجة.</p>
+                <a href="#articles" class="text-blue-500 hover:underline">اقرأ المقالات</a>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg card">
+                <h2 class="text-xl font-bold mb-3">💬 المنتدى والمجتمع</h2>
+                <p>شارك الأسئلة وتفاعل مع الآخرين في منتدى البرمجة.</p>
+                <a href="#community" class="text-blue-500 hover:underline">انضم إلى المجتمع</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white p-4 text-center mt-6">
+        &copy; 2024 تعلم البرمجة - جميع الحقوق محفوظة
+    </footer>
+    
+</body>
+</html>
