@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطوات تطوير الذات</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+        }
+
+        .header {
+            background:linear-gradient(to right, #6a0572, #a4508b);;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+            font-size: 2.5rem;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .steps-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 50px;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 200px;
+            transition: transform 0.3s ease;
+        }
+
+        .step:hover {
+            transform: translateY(-10px);
+        }
+
+        .step i {
+            font-size: 3rem;
+            color: #3c8dbc;
+            margin-bottom: 20px;
+        }
+
+        .step h3 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .step p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Creating the lines that connect the steps */
+        .line {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background-color: #3c8dbc;
+            z-index: -1;
+        }
+
+        /* Adjusting step positions for better look */
+        .step:nth-child(1) { position: relative; }
+        .step:nth-child(2) { position: relative; }
+        .step:nth-child(3) { position: relative; }
+        .step:nth-child(4) { position: relative; }
+        .step:nth-child(5) { position: relative; }
+        .step:nth-child(6) { position: relative; }
+        .step:nth-child(7) { position: relative; }
+        .step:nth-child(8) { position: relative; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>خطوات تطوير الذات</h1>
+    </div>
+
+    <div class="steps-container">
+        <div class="step">
+            <i class="fas fa-bullseye"></i>
+            <h3>تحديد الأهداف</h3>
+            <p>ابدأ بتحديد أهداف واضحة وقابلة للقياس لتحقيق النجاح المستدام في حياتك.</p>
+        </div>
+        <div class="step">
+            <i class="fas fa-brain"></i>
+            <h3>توسيع المعرفة</h3>
+            <p>ابقَ دائمًا على اطلاع جديد، وحاول توسيع معرفتك في مجالات متعددة.</p>
+        </div>
+        <div class="step">
+            <i class="fas fa-cogs"></i>
+            <h3>اكتساب المهارات</h3>
+            <p>استثمر وقتك في تطوير مهارات جديدة مثل القيادة والتواصل الفعال.</p>
+        </div>
+        <div class="step">
+            <i class="fas fa-thumbs-up"></i>
+            <h3>تنمية الثقة بالنفس</h3>
+            <p>اعمل على تعزيز ثقتك بنفسك من خلال تحقيق الإنجازات الصغيرة.</p>
+        </div>
+        <div class="step">
+            <i class="fas fa-heart"></i>
+            <h3>التوازن الشخصي</h3>
+            <p>احرص على إيجاد توازن بين العمل والحياة الشخصية لتحقيق راحة البال.</p>
+        </div>
+        <div class="step">
+            <i class="fas fa-calendar-check"></i>
+            <h3>إدارة الوقت</h3>
+            <p>تعلم كيف تدير وقتك بشكل فعال من خلال تنظيم المهام اليومية.</p>
+        </div>
+        <div class="step">
+            <i class="fas fa-users"></i>
+            <h3>العلاقات الاجتماعية</h3>
+            <p>ابنِ علاقات قوية مع الأشخاص الذين يدعمونك ويساعدونك في نموك الشخصي.</p>
+        </div>
+        <div class="step">
+            <i class="fas fa-chart-line"></i>
+            <h3>المراجعة والتقييم</h3>
+            <p>قم بمراجعة تقدمك بشكل دوري وقم بتعديل الأهداف والخطط حسب الحاجة.</p>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+</body>
+</html>

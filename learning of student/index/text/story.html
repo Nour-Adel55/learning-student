@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قصص عن الثقة بالنفس</title>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-image:  linear-gradient(135deg, #a8e6cf, #10c7e7, #022a4e);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .story-container {
+            width: 80%;
+            max-width: 900px;
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+            text-align: justify;
+            position: relative;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+            border-left: 10px solid #4A90E2;
+        }
+
+        .title {
+            font-size: 2.8em;
+            text-align: center;
+            color: #4A90E2;
+            margin-bottom: 20px;
+            font-weight: bold;
+            animation: slideIn 1.5s ease-in-out;
+            text-transform: uppercase;
+        }
+
+        .content {
+            line-height: 1.8;
+            font-size: 1.1em;
+            color: #333;
+            text-align: justify;
+            margin-bottom: 30px;
+            animation: fadeInContent 2s ease-in-out;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+        }
+
+        .page-footer {
+            text-align: center;
+            font-size: 1em;
+            color: #777;
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+        }
+
+        /* Animation Effects */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+
+        @keyframes fadeInContent {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .next-button {
+            display: block;
+            background-color: #4A90E2;
+            color: white;
+            padding: 12px 30px;
+            margin: 40px auto 0;
+            width: auto;
+            text-align: center;
+            font-size: 1.2em;
+            border-radius: 25px;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        .next-button:hover {
+            background-color: #357ABD;
+            transform: scale(1.1);
+        }
+
+        .next-button:active {
+            transform: scale(0.9);
+        }
+
+        @media (max-width: 768px) {
+            .story-container {
+                width: 90%;
+                padding: 20px;
+            }
+
+            .title {
+                font-size: 2.2em;
+            }
+
+            .content {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="story-container" id="story1">
+        <div class="title">رحلة من الشك إلى اليقين</div>
+        <div class="content">
+            <p>كان هناك شاب يُدعى "حسن"، بدأ حياته مليئة بالشكوك في قدراته. كان يعتقد أن النجاح بعيد المنال ولا يستطيع تحقيقه.</p>
+            <p>لكن، بدأ "حسن" يلاحظ أنه كلما ركز على نقاط قوته وتعلم من أخطائه، بدأ يكتسب الثقة تدريجيًا.</p>
+            <p>ومع مرور الوقت، أصبحت التحديات أكثر سهولة بالنسبة له، وبدأ يحقق النجاحات واحدة تلو الأخرى.</p>
+        </div>
+        <div class="page-footer">صفحة 1 من 3</div>
+        <button class="next-button" onclick="nextStory(2)">الانتقال إلى القصة التالية</button>
+    </div>
+
+    <div class="story-container" id="story2" style="display:none;">
+        <div class="title">قوة الإرادة</div>
+        <div class="content">
+            <p>في أحد القرى الصغيرة، كانت هناك فتاة تُدعى "فاطمة" تحلم بأن تصبح طبيبة.</p>
+            <p>واجهت العديد من الصعوبات والتحديات، ولكن لم تستسلم. بدأت تُركز على بناء نفسها وقدرتها على التغلب على العقبات.</p>
+            <p>ومع مرور الوقت، أصبحت فاطمة أحد الأطباء المعروفين في منطقتها، واحتفظت بثقتها بنفسها حتى في أصعب الأوقات.</p>
+        </div>
+        <div class="page-footer">صفحة 2 من 3</div>
+        <button class="next-button" onclick="nextStory(3)">الانتقال إلى القصة التالية</button>
+    </div>
+
+    <div class="story-container" id="story3" style="display:none;">
+        <div class="title">الخطوة الأولى نحو النجاح</div>
+        <div class="content">
+            <p>كان "سامي" شخصًا يشعر بالتردد في اتخاذ القرارات، كان يعتقد أن كل خطوة صغيرة يمكن أن تؤدي إلى فشل.</p>
+            <p>ثم جاء اليوم الذي قرر فيه أن يأخذ الخطوة الأولى نحو هدفه، حتى لو كانت بسيطة.</p>
+            <p>كلما أخذ خطوة، زادت ثقته بنفسه، ووجد أن الفشل ليس النهاية، بل هو جزء من النجاح.</p>
+        </div>
+        <div class="page-footer">صفحة 3 من 3</div>
+        <button class="next-button" onclick="alert('شكراً لقراءة القصص!')">انتهاء القراءة</button>
+    </div>
+
+    <script>
+        function nextStory(storyNumber) {
+            const stories = document.querySelectorAll('.story-container');
+            stories.forEach(story => story.style.display = 'none');
+            document.getElementById('story' + storyNumber).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

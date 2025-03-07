@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تقوية الشخصية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Amiri&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        .container {
+            width: 85%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 2s ease-in-out;
+    max-height: 90vh; /* يحدد أقصى ارتفاع للـ container */
+    overflow-y: auto; /* يتيح التمرير عند الحاجة */
+    padding-right: 15px; /* لضمان عدم تداخل المحتوى مع الشريط الجانبي */
+}
+
+        .title {
+            font-size: 2.5em;
+            text-align: center;
+            color: #4A90E2;
+            margin-bottom: 30px;
+            font-family: 'Amiri', serif;
+            font-weight: bold;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+            animation: slideIn 1.5s ease-in-out;
+        }
+
+        .accordion {
+            background-color: #ff5e5b;
+            color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            cursor: pointer;
+            width: 100%;
+            text-align: left;
+            font-size: 1.2em;
+            border: none;
+            outline: none;
+            transition: all 0.3s ease;
+            margin: 10px 0;
+        }
+
+        .accordion:hover {
+            background-color: #ff9f92;
+            transform: scale(1.05);
+        }
+
+        .panel {
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            display: none;
+            font-size: 1.1em;
+            color: #333;
+            border-radius: 5px;
+            margin-top: 10px;
+            animation: fadeInContent 1.5s ease-in-out;
+        }
+
+        .panel p {
+            margin-bottom: 10px;
+        }
+
+        /* Animation Effects */
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(-50px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideIn {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+
+        @keyframes fadeInContent {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="title">كيفية تقوية الشخصية</div>
+
+        <!-- Accordion 1 -->
+        <button class="accordion">الثقة بالنفس</button>
+        <div class="panel">
+            <p>الثقة بالنفس تعتبر من أبرز عوامل قوة الشخصية. الشخص الواثق من نفسه يظهر بشكل إيجابي في المواقف المختلفة، مما يساعده على النجاح في الحياة الشخصية والمهنية.</p>
+            <p>لتقوية الثقة بالنفس، يمكنك العمل على تقبل نفسك كما أنت، وعدم المقارنة بالآخرين. أيضًا، العمل على تحسين مهاراتك وزيادة معرفتك يعزز من ثقتك بنفسك.</p>
+        </div>
+
+        <!-- Accordion 2 -->
+        <button class="accordion">القدرة على التواصل</button>
+        <div class="panel">
+            <p>التواصل الفعّال مهارة أساسية لزيادة قوة الشخصية. الشخص الذي يستطيع التعبير عن أفكاره بوضوح والإصغاء للآخرين يكون أكثر قدرة على التأثير والنجاح في العلاقات الشخصية والمهنية.</p>
+            <p>تعلم كيفية الاستماع للآخرين وطرح الأسئلة المناسبة، وكذلك التعبير عن نفسك بصدق وأسلوب محترم، يساهم في بناء شخصية قوية.</p>
+        </div>
+
+        <!-- Accordion 3 -->
+        <button class="accordion">اتخاذ القرارات</button>
+        <div class="panel">
+            <p>اتخاذ القرارات بثقة يعتبر من سمات الشخصية القوية. الشخص الذي يتمتع بقدرة على اتخاذ قراراته بنفسه يكون أكثر قدرة على التعامل مع التحديات والتوجه نحو الأهداف.</p>
+            <p>لتقوية هذه المهارة، يمكنك البدء باتخاذ قرارات صغيرة والانتقال تدريجيًا إلى قرارات أكبر. كما يجب أن تكون مستعدًا لتحمل المسؤولية عن قراراتك.</p>
+        </div>
+
+        <!-- Accordion 4 - تحسين الذات -->
+        <button class="accordion">تحسين الذات</button>
+        <div class="panel">
+            <p>تحسين الذات هو عملية مستمرة تركز على تعزيز مهاراتك الشخصية وتطوير مميزاتك الفكرية والعاطفية. الشخص الذي يسعى لتحسين ذاته يواجه التحديات بثقة ويواصل العمل على نفسه بطرق فعّالة.</p>
+            <p>ابدأ بتحديد نقاط قوتك وضعفك، وابحث عن طرق لتطوير كل منها. ابحث عن الكتب والموارد التي تساعدك على التعلم، ولا تتوقف أبدًا عن السعي نحو تحسين نفسك.</p>
+        </div>
+
+        <!-- Accordion 5 - السيطرة على المشاعر -->
+        <button class="accordion">السيطرة على المشاعر</button>
+        <div class="panel">
+            <p>السيطرة على المشاعر تُعتبر من أهم مقومات الشخصية القوية. الشخص الذي يستطيع التحكم في مشاعره يستطيع التصرف بشكل أكثر عقلانية في المواقف الصعبة.</p>
+            <p>ممارسة التأمل والتنفس العميق والتمارين الرياضية يمكن أن تساعدك على التحكم في مشاعرك. كما يمكن أن يساعدك التواصل مع الأصدقاء المقربين والعائلة في التعبير عن مشاعرك بطريقة صحية.</p>
+        </div>
+
+        <!-- Accordion 6 - التحدي والمثابرة -->
+        <button class="accordion">التحدي والمثابرة</button>
+        <div class="panel">
+            <p>التحدي والمثابرة هما عنصران أساسيان لتحقيق النجاح وتطوير الشخصية. الشخص الذي يقبل التحديات ويستمر في السعي رغم الصعوبات يظهر قوة شخصية غير عادية.</p>
+            <p>لتعزيز هذا الجانب، حدد أهدافًا صعبة وقابلة للتحقيق، واستمر في السعي نحوها مهما كانت الصعوبات. تعلم من كل فشل واعتبره خطوة نحو النجاح.</p>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
